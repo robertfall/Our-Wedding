@@ -1,0 +1,282 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/***********************************************************************************************************/
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url(../img/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+}
+
+div#main-bar {
+  height: 130px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  background: black;
+  width: 100%;
+  zoom: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+div#main-bar-container h1 {
+  display: block;
+  color:white;
+  position: relative;
+  left: 30px;
+  top: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  float: left;
+  font-size: 64px;
+}
+
+div#main-bar-container {
+  width: 95%;
+  position: fixed;
+  bottom: 120px;
+  right: 0px;
+}
+
+div#main-bar-container h3{
+  font-family: georgia, times new roman, times;
+  position: absolute;
+  left: 30px;
+  top: 70px;
+  color: white;
+  font-size: 36px;
+  float: left;
+  display: block;
+}
+
+div#nav {
+  z-index: 2;
+}
+
+div#nav ul {
+  list-style: none;
+  float: right;
+  text-align: right;
+  margin-top: 20px;
+}
+
+div#nav li {
+  display: block;
+  margin-bottom: 5px;
+}
+
+div#nav a {
+  display: inline-block;
+  padding: 10px;
+  font-family: georgia, times new roman, times;
+  font-size: 28px;
+  text-decoration: none;
+  color: white;
+  min-width: 80px;
+  text-align: left;
+
+  background: rgba(0, 0, 0, 0.5);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#55000000, endColorstr=#55000000);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+div#nav a.current {
+  color: black;
+
+  background: rgba(121, 196, 153, 0.6);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FCF7C7, endColorstr=#99FCF7C7);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FCF7C7, endColorstr=#99FCF7C7)";
+}
+
+div#nav a.current:hover {
+  background: rgba(121, 196, 153, 0.6);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FCF7C7, endColorstr=#99FCF7C7);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FCF7C7, endColorstr=#99FCF7C7)";
+}
+
+
+
+div#nav a:hover {
+  background: rgba(252, 247, 199, 0.6);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FCF7C7, endColorstr=#99FCF7C7);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FCF7C7, endColorstr=#99FCF7C7)";
+
+  color: black;
+}
+
+img.signature {
+  width: 300px;
+  float: right;
+  position: absolute;
+  right: 30px;
+  top: -50px;
+}
+
+div.page {
+  background-size: cover;
+  position: absolute;
+  left: 80px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border-left: 15px solid #E2504A;
+  z-index: -1;
+  opacity: 0;
+  transition-property: opacity, left;
+  transition-duration: 1.0s;
+  /* Firefox */
+  -moz-transition-property: opacity, left;
+  -moz-transition-duration: 1.0s;
+  /* WebKit */
+  -webkit-transition-property: opacity, left;
+  -webkit-transition-duration: 1.0s;
+  -webkit-transition-timing-function: linear, ease-in;
+}
+
+div.visible {
+  left: 40px;
+  opacity: 1;
+  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+}
+
+div#her-page {
+  background-image: url(../img/vineyards.jpg);
+}
+
+div#him-page {
+  background-image: url(../img/robert.jpg);
+}
+
+div#ring-page {
+  background-image: url(../img/wedding_hands.jpg);
+}
+
+div#wedding-page {
+  background-image: url(../img/the_wedding.jpeg);
+}
+
+div#contact-page {
+  background-image: url(../img/contact.jpg);
+}
+
+div.text {
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    color: #F2F2F2;
+    padding: 10px;
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#55000000, endColorstr=#55000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    display: none;
+    font-family: Georgia, serif;
+    text-align: justify;
+}
+
+div.contact-text {
+    display: block;
+    top: 20px;
+    left: 20px;
+}
+
+div#him-page .him-text {
+    display: block;
+    bottom: 30px;
+    right: 70px;
+    height: 360px;
+}
+
+div#her-page .her-text {
+    display: block;
+    bottom: 30px;
+    right: 70px;
+}
+
+div#ring-page .ring-text {
+    display: block;
+    bottom: 30px;
+    height: 300px;
+    right: 70px;
+}
+
+div#ring-page .ring-text2 {
+    display: block;
+    bottom: 30px;
+    height: 420px;
+    left: 30px;
+}
+
+div#contact-page .contact-text {
+    display: block;
+}
+
+.contact-text h2 {
+    font-size: 1.8em;
+}
+
+
+.c {
+  clear: both;
+}
