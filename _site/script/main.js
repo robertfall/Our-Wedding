@@ -1,14 +1,12 @@
 window.WeddingController = {
   hideCurrentPage: function(event) {
-    if(WeddingController.$currentPage) {
-      WeddingController.$currentPage.hide('drop', { direction: 'right'}, 200);
-      WeddingController.$currentPage = undefined;
-    }
+    $('.page').removeClass('visible');
   },
   showPage: function(pageName) {
+    $('.page').removeClass('visible');
     $('#main-bar-container').hide('fade',200);
     WeddingController.$currentPage = $(pageName);
-    WeddingController.$currentPage.toggle('drop', { direction: 'right'}, 200);
+    WeddingController.$currentPage.addClass('visible');
   },
   clickLink: function(e) {
     e.stopPropagation();
