@@ -49,6 +49,18 @@ table {
 
 /***********************************************************************************************************/
 
+a:hover {
+    color: #FCF7C7;
+}
+
+a:visited {
+    color: #83AF9B;
+}
+
+a {
+    color: white;
+}
+
 html, body {
   height: 100%;
 }
@@ -110,7 +122,12 @@ div#main-bar-container h3{
 }
 
 div#nav {
-  z-index: 2;
+    position: absolute;
+    height: 400px;
+    width: 200px;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
 }
 
 div#nav ul {
@@ -179,8 +196,7 @@ div.page {
   top: 0px;
   width: 100%;
   height: 100%;
-  border-left: 15px solid #E2504A;
-  z-index: -1;
+  border-left: 15px solid #83AF9B;
   opacity: 0;
   transition-property: opacity, left;
   transition-duration: 1.0s;
@@ -194,10 +210,11 @@ div.page {
 }
 
 div.visible {
-  left: 40px;
-  opacity: 1;
-  transform: translate3d(0,0,0);
-  -webkit-transform: translate3d(0,0,0);
+    z-index: 8;
+    left: 40px;
+    opacity: 1;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
 }
 
 div#her-page {
@@ -213,7 +230,7 @@ div#ring-page {
 }
 
 div#wedding-page {
-  background-image: url(../img/the_wedding.jpeg);
+  background-image: url(../img/wedding.jpg);
 }
 
 div#contact-page {
@@ -239,6 +256,7 @@ div.contact-text {
     display: block;
     top: 20px;
     left: 20px;
+    height: 320px;
 }
 
 div#him-page .him-text {
@@ -268,6 +286,36 @@ div#ring-page .ring-text2 {
     left: 30px;
 }
 
+div#wedding-page .wedding-text {
+    display: block;
+    bottom: 30px;
+    height: 190px;
+    right: 70px;
+}
+
+div#wedding-page .wedding-text2 {
+    display: block;
+    top: 20px;
+    height: 380px;
+    width: 300px;
+    left: 70px;
+}
+
+#map {
+    bottom: 40px;
+    position: absolute;
+    left: 70px;
+}
+
+.wedding-text p, .wedding-text2 p {
+    margin-bottom: 10px;
+}
+
+.wedding-text2 h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
 div#contact-page .contact-text {
     display: block;
 }
@@ -275,6 +323,7 @@ div#contact-page .contact-text {
 .contact-text h2 {
     font-size: 1.8em;
 }
+
 
 
 .c {

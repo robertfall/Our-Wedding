@@ -25,8 +25,11 @@ window.WeddingController = {
     $('#main-bar-container').show('fade',200);
   },
   initialise: function() {
+    $('.page a').click(function (ev) {
+        ev.stopPropagation();
+    });
+    $('.page, body').click(WeddingController.home);
     $('#nav').on('click', 'a', WeddingController.clickLink);
-    $('body').click(WeddingController.home);
   }
 }
 
