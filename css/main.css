@@ -192,9 +192,9 @@ img.signature {
 div.page {
   background-size: cover;
   position: absolute;
-  left: 80px;
+  right: 0px;
   top: 0px;
-  width: 100%;
+  width: 90%;
   height: 100%;
   border-left: 15px solid #83AF9B;
   opacity: 0;
@@ -211,7 +211,6 @@ div.page {
 
 div.visible {
     z-index: 8;
-    left: 40px;
     opacity: 1;
     transform: translate3d(0,0,0);
     -webkit-transform: translate3d(0,0,0);
@@ -261,59 +260,61 @@ div.contact-text {
 
 div#him-page .him-text {
     display: block;
-    bottom: 30px;
-    right: 70px;
+    bottom: 10px;
+    left: 10px;
     height: 360px;
 }
 
 div#her-page .her-text {
     display: block;
-    bottom: 30px;
-    right: 70px;
+    bottom: 10px;
+    left: 10px;
 }
 
 div#ring-page .ring-text {
     display: block;
-    bottom: 30px;
+    bottom: 10px;
     height: 300px;
-    right: 70px;
+    right: 10px;
 }
 
 div#ring-page .ring-text2 {
     display: block;
-    bottom: 30px;
+    bottom: 10px;
     height: 420px;
-    left: 30px;
+    left: 10px;
 }
 
 div#wedding-page .wedding-text {
     display: block;
-    bottom: 30px;
+    bottom: 10px;
     height: 190px;
-    right: 70px;
+    right: 10px;
 }
 
 div#wedding-page .wedding-text2 {
     display: block;
-    top: 20px;
-    height: 380px;
+    top: 10px;
+    height: 320px;
     width: 300px;
-    left: 70px;
+    left: 10px;
 }
 
 #map {
-    bottom: 40px;
+    bottom: 5px;
     position: absolute;
-    left: 70px;
+    left: 10px;
 }
 
 .wedding-text p, .wedding-text2 p {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .wedding-text2 h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
+    font-size: 1.3em;
+    margin-top: 10px;
+    text-decoration: underline;
+    margin-bottom: 5px;
 }
 
 div#contact-page .contact-text {
