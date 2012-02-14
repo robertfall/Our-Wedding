@@ -192,19 +192,19 @@ img.signature {
 div.page {
   background-size: cover;
   position: absolute;
-  right: 0px;
+  right: -20px;
   top: 0px;
   width: 90%;
   height: 100%;
   border-left: 15px solid #83AF9B;
   opacity: 0;
-  transition-property: opacity, left;
+  transition-property: opacity, right;
   transition-duration: 1.0s;
   /* Firefox */
-  -moz-transition-property: opacity, left;
+  -moz-transition-property: opacity, right;
   -moz-transition-duration: 1.0s;
   /* WebKit */
-  -webkit-transition-property: opacity, left;
+  -webkit-transition-property: opacity, right;
   -webkit-transition-duration: 1.0s;
   -webkit-transition-timing-function: linear, ease-in;
 }
@@ -212,6 +212,7 @@ div.page {
 div.visible {
     z-index: 8;
     opacity: 1;
+    right: 0px;
     transform: translate3d(0,0,0);
     -webkit-transform: translate3d(0,0,0);
 }
